@@ -32,7 +32,7 @@ async function onCall({ message, args, getLang, data, userPermissions, prefix })
 
     try {
         // Use axios to make the API request
-        const { data } = await axios.get('https://gpt4-api-zl5u.onrender.com/api/gpt4o', {
+        const { data } = await axios.get('https://deku-rest-api.gleeze.com/blackbox?prompt=hi', {
             params: {
                 prompt: input,
                 uid: userId
